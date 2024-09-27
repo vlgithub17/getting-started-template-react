@@ -1,7 +1,7 @@
 import re
 
 def update_js_file(new_service_id, new_owner_id):
-    with open('./src/skapi.js', 'r') as file:
+    with open('./src/skapi_temp.js', 'r') as file:
         content = file.read()
 
     pattern = r"Skapi\(\s*['\"]([^'\"]*)['\"]\s*,\s*['\"]([^'\"]*)['\"]\s*\)"
